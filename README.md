@@ -1,5 +1,7 @@
 # alpine-gradle
 
+[![](https://badge.imagelayers.io/chickenzord/alpine-gradle:latest.svg)](https://imagelayers.io/?images=chickenzord/alpine-gradle:latest 'Get your own badge on imagelayers.io')
+
 Docker image for Gradle based on Alpine Linux
 
 ## Sample run command
