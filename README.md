@@ -7,7 +7,7 @@ Docker image for Gradle based on Alpine Linux
 ## Sample run command
 
 ```
-docker run --rm -it -v $(pwd):/app -v $(pwd)/.gradle:/gradle chickenzord/alpine-gradle clean build
+docker run --rm -it -v $(pwd):/app -v $HOME/.gradle:/gradle chickenzord/alpine-gradle clean build
 ```
 
 ## Mount Points
