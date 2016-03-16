@@ -18,5 +18,8 @@ RUN wget  https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.z
 
 RUN apk update && apk add libstdc++ && rm -rf /var/cache/apk/*
 
+RUN mkdir -p /gradle && mkdir -p /app
+VOLUME /gradle /app
+
 WORKDIR /app
 ENTRYPOINT gradle
