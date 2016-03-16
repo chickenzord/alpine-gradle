@@ -16,5 +16,7 @@ RUN wget  https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.z
     ln -s gradle-$GRADLE_VERSION gradle && \
     echo -ne "- with Gradle $GRADLE_VERSION\n" >> /root/.built
 
+RUN apk update && apk add libstdc++ && rm -rf /var/cache/apk/*
+
 WORKDIR /app
 ENTRYPOINT gradle
